@@ -1,58 +1,27 @@
-# TEMPLATE LARAVEL PHP
+# ESERCIZIO: Trains
 
 > [!NOTE]
 >
-> nome repo: templete_laravel-php
+> nome repo: laravel-migration-seeder
 
-#### Impostazioni per utilizzare il template:
+### Descrizione:
 
-1. Duplicare il file `.env.exemple` e rinominarlo `.env`, o da terminale eseguire il comando:
-```
-cp .env.example .env
-```
+- Creiamo una tabella `trains` e relativa `Migration`.
 
-2. Da terminale eseguire il comando: 
-```
-composer install
-```
+Ogni treno dovrà avere:
+1. Azienda;
+2. Stazione di partenza;
+3. Stazione di arrivo;
+4. Orario di partenza;
+5. Orario di arrivo;
+6. Codice Treno;
+7. Numero Carrozze;
+8. In orario;
+9. Cancellato.
 
-4. Da terminale eseguire il comando:
-```
-php artisan key:generate
-```
+È probabile che siano necessarie altre colonne per far funzionare la tabella nel modo corretto.
+Inserite inizialmente i dati tramite **PhpMyAdmin**.
+Create `Model` relativo ed un `Controller` per mostrare nella home page tutti i treni che sono in partenza dalla data odierna.
 
-5. Da terminale eseguire il comando:
-```
-npm install
-```
-
-6. Da terminale eseguire il comando:
-```
-php artisan serve
-```
-
-7. Aprire secondo terminale ed eseguire il comando:
-```
-npm run dev
-```
-
-- È stato già creato il `Controller` con il comando da terminale:
-```
-php artisan make:controller Guest/PageController
-```
-Nel file `PageCntroller.php` si occuperà di ritornare la **view** della pagina:
-```
-return view('index', $data)->name(home);
-```
-- Nel file `web.php` verrà gestita solamente la chiamata che verrà girata alla `pageController`:
-```
-Route::get('/', [PageController::class, 'index']);
-```
 
 8. Resta da creare il **Model** secondo esigenze con il comando da terminale:
-```
-php artisan make:model NomeModel
-```
-
-
-##### © byHYONS™
