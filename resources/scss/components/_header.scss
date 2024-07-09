@@ -1,0 +1,20 @@
+/* --------------------------------
+            HEADER
+-------------------------------- */
+
+header {
+    position: sticky;
+    top: 0;
+    border-top: 2px solid $black;
+    height: 100px;
+    background-color: $red;
+    color: #fff;
+    font-size: 30px;
+    @extend %shadow;
+    
+    h2 {
+        text-align: center;
+        line-height: 100px;
+
+    }
+}

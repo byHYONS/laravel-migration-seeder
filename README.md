@@ -22,6 +22,3 @@ Ogni treno dovrà avere:
 È probabile che siano necessarie altre colonne per far funzionare la tabella nel modo corretto.
 Inserite inizialmente i dati tramite **PhpMyAdmin**.
 Create `Model` relativo ed un `Controller` per mostrare nella home page tutti i treni che sono in partenza dalla data odierna.
-
-
-8. Resta da creare il **Model** secondo esigenze con il comando da terminale:

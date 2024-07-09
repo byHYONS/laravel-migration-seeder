@@ -12,7 +12,7 @@ class PageController extends Controller
 
         $trains = Train::all();
 
-        dd($trains);
+        // dd($trains);
 
         return view('index', compact('trains'));
 
