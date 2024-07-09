@@ -3,15 +3,18 @@
 namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
+use App\Models\Train;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function index() {
 
-        $data = 'sono un dato passato alla pagina';
+        $trains = Train::all();
 
-        return view('index', compact('data'));
+        dd($trains);
+
+        return view('index', compact('trains'));
 
     }
 }
