@@ -4,7 +4,7 @@
 
 <main class="tabella">
 
-    <div class="container-lg ">
+    <div class="px-5">
 
         <table class="table table-striped">
             <thead>
@@ -12,7 +12,9 @@
                     <th>Company</th>
                     <th>Departure Station</th>
                     <th>Arrival Station</th>
-                    <th>Time of Departure</th>
+                    <th>Departure Date</th>
+                    <th>Departure Time</th>
+                    <th>Arrival Date</th>
                     <th>Arrival Time</th>
                     <th>Train Code</th>
                     <th>Coach Number</th>
@@ -29,8 +31,10 @@
                     <td> {{$train->company}} </td>
                     <td> {{$train->departure_station}} </td>
                     <td> {{$train->arrival_station}} </td>
-                    <td class="text-center"> {{\Carbon\Carbon::parse($train->time_of_departure)->format('d/m/Y')}} </td>
-                    <td class="text-center"> {{\Carbon\Carbon::parse($train->arrival_time)->format('d/m/Y')}} </td>
+                    <td> {{\Carbon\Carbon::parse($train->departure_date)->format('d/m/Y')}} </td>
+                    <td class="text-center"> {{\Carbon\Carbon::parse($train->departure_time)->format('H:i')}} </td>
+                    <td> {{\Carbon\Carbon::parse($train->arrival_date)->format('d/m/Y')}} </td>
+                    <td class="text-center"> {{\Carbon\Carbon::parse($train->arrival_time)->format('H:i')}} </td>
                     <td class="text-center"> {{$train->train_code}} </td>
                     <td class="text-center"> {{$train->coach_number}} </td>
                     <td class="text-center"> {{$train->on_schedule ? 'Sì' : 'NO'}} </td>
