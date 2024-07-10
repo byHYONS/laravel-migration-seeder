@@ -4,6 +4,10 @@
 
 <main class="tabella">
 
+    <div class="home">
+        <a href="{{route('home')}}">Torna alla Home</a>
+    </div>
+
     <div class="px-5">
 
         <table class="table table-striped">

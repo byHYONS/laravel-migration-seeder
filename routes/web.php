@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Guest\PageController;
+use App\Http\Controllers\Guest\TrainsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,5 +19,14 @@ use Illuminate\Support\Facades\Route;
 //     return view('index');
 // });
 
-//? rotta per la home:
+//? rotta per la home :
 Route::get('/', [PageController::class, 'index'])->name('home');
+
+//? rotta per la lista treni totale:
+Route::get('/trains', [TrainsController::class, 'trains'])->name('trains');
+
+//? rotta per la lista treni della giornata:
+Route::get('/trains-today', [TrainsController::class, 'trainToDay'])->name(('trainsToDay'));
+
+//? rotta per la lista treni della seguente:
+Route::get('/trains-nextday', [TrainsController::class, 'trainNextDay'])->name(('trainsNextDay'));

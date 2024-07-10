@@ -1,0 +1,38 @@
+.main {
+    
+    height: calc(100% - 200px);
+    overflow: auto;
+    .mask {
+        position: relative;
+        top: 50%;
+        transform: translateY(-60%);
+        background-color: $red;
+        border-radius: 15px;
+        padding: 65px;
+        margin: 40px auto;
+        @extend %shadow;
+        width: 75%;
+        padding-top: 40px;
+        overflow: auto;
+        text-align: center;
+
+        h2 {
+            margin-top: 30px;
+            text-align: center;
+            color: $text;
+            font-weight: 600;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 65px;
+            color: $red;
+            padding: 15px 20px;
+            border-radius: 10px;
+            background-color: $text;
+            margin-bottom: 50px;
+
+
+        }
+    }
+}
