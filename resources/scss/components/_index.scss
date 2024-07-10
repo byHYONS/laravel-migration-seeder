@@ -1,0 +1,9 @@
+
+.tabella {
+    padding-top: 35px;
+    height: calc(100% - 200px);
+    overflow: auto;
+    & table.table {
+      @extend %shadow;
+    }
+}

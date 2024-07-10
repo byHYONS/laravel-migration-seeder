@@ -4,7 +4,7 @@
 
 <main class="tabella">
 
-    <div class="container-lg mt-5 mb-5">
+    <div class="container-lg ">
 
         <table class="table table-striped">
             <thead>
@@ -29,8 +29,8 @@
                     <td> {{$train->company}} </td>
                     <td> {{$train->departure_station}} </td>
                     <td> {{$train->arrival_station}} </td>
-                    <td> {{$train->time_of_departure}} </td>
-                    <td> {{$train->arrival_time}} </td>
+                    <td> {{\Carbon\Carbon::parse($train->time_of_departure)->format('d/m/Y')}} </td>
+                    <td> {{\Carbon\Carbon::parse($train->arrival_time)->format('d/m/Y')}} </td>
                     <td> {{$train->train_code}} </td>
                     <td> {{$train->coach_number}} </td>
                     <td> {{$train->on_schedule ? 'Sì' : 'NO'}} </td>
