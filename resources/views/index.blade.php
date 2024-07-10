@@ -29,12 +29,12 @@
                     <td> {{$train->company}} </td>
                     <td> {{$train->departure_station}} </td>
                     <td> {{$train->arrival_station}} </td>
-                    <td> {{\Carbon\Carbon::parse($train->time_of_departure)->format('d/m/Y')}} </td>
-                    <td> {{\Carbon\Carbon::parse($train->arrival_time)->format('d/m/Y')}} </td>
-                    <td> {{$train->train_code}} </td>
-                    <td> {{$train->coach_number}} </td>
-                    <td> {{$train->on_schedule ? 'Sì' : 'NO'}} </td>
-                    <td> {{$train->cancelled ? 'SÌ' : 'NO'}} </td>
+                    <td class="text-center"> {{\Carbon\Carbon::parse($train->time_of_departure)->format('d/m/Y')}} </td>
+                    <td class="text-center"> {{\Carbon\Carbon::parse($train->arrival_time)->format('d/m/Y')}} </td>
+                    <td class="text-center"> {{$train->train_code}} </td>
+                    <td class="text-center"> {{$train->coach_number}} </td>
+                    <td class="text-center"> {{$train->on_schedule ? 'Sì' : 'NO'}} </td>
+                    <td class="text-center"> {{$train->cancelled ? 'SÌ' : 'NO'}} </td>
                 </tr>
                     
                 @endforeach
