@@ -23,6 +23,7 @@
             font-weight: 600;
         }
         a {
+            @extend %shadow;
             display: inline-block;
             text-decoration: none;
             margin-top: 65px;

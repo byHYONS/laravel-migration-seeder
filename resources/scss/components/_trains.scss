@@ -1,4 +1,9 @@
 
+//* FILE CONDIVISO CON LE PAGINE:
+//* • trainsToDay;
+//* • trainsNextDay;
+
+
 .home {
   position: fixed;
   bottom: 85px;
@@ -12,6 +17,7 @@
     border-radius: 10px;
     background-color: $red;
     margin-bottom: 50px;
+    @extend %shadow;
   }
 } 
 .tabella {
