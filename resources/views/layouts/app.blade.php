@@ -10,7 +10,6 @@
 <body>
     @include('shared.header')
     
-
         @yield('content')
     
     {{-- <img src="{{ Vite::asset('resources/img/logo.png') }}" alt=""> --}}
